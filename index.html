@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>楽天証券の神設定5選｜開設したら絶対やって</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, 'Hiragino Sans', sans-serif;
+  background: linear-gradient(160deg, #bae6fd 0%, #e0f2fe 60%, #f0f9ff 100%);
+  min-height: 100vh;
+  padding: 0 0 40px;
+  color: #1e293b;
+}
+.container { max-width: 480px; margin: 0 auto; }
+
+.hero {
+  background: linear-gradient(90deg, #38bdf8, #0284c7);
+  padding: 28px 20px 24px;
+  text-align: center;
+}
+.hero-eyebrow { color: rgba(255,255,255,0.85); font-size: 11px; font-weight: 700; letter-spacing: 0.1em; margin-bottom: 8px; }
+.hero h1 { color: #fff; font-size: 20px; font-weight: 900; line-height: 1.5; margin-bottom: 10px; }
+.hero-sub { color: rgba(255,255,255,0.8); font-size: 12px; line-height: 1.7; }
+
+.intro {
+  background: #fff;
+  margin: 16px 16px 0;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  border-left: 4px solid #38bdf8;
+  font-size: 13px;
+  line-height: 1.9;
+  color: #374151;
+}
+
+.section-title {
+  font-size: 11px; font-weight: 700; color: #64748b;
+  letter-spacing: 0.08em; margin: 16px 16px 8px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  margin: 0 16px 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.card-header {
+  background: linear-gradient(90deg, #38bdf8, #0284c7);
+  padding: 12px 16px;
+  display: flex; align-items: center; gap: 10px;
+}
+.card-num {
+  background: rgba(255,255,255,0.25);
+  color: #fff; font-size: 13px; font-weight: 900;
+  width: 28px; height: 28px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.card-header-text { color: #fff; }
+.card-header-title { font-size: 14px; font-weight: 900; line-height: 1.4; }
+.card-header-sub { font-size: 11px; opacity: 0.85; margin-top: 2px; }
+.card-body { padding: 14px 16px; }
+
+.why-box {
+  background: #fef3c7; border-left: 3px solid #f59e0b;
+  border-radius: 0 8px 8px 0;
+  padding: 8px 12px; font-size: 12px; color: #92400e;
+  line-height: 1.8; margin-bottom: 12px; font-weight: 700;
+}
+
+.steps { display: flex; flex-direction: column; gap: 10px; }
+.step { display: flex; gap: 10px; }
+.step-num {
+  min-width: 22px; height: 22px; border-radius: 50%;
+  background: #0284c7; color: #fff;
+  font-size: 11px; font-weight: 900;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; margin-top: 2px;
+}
+.step-content { font-size: 13px; line-height: 1.7; color: #374151; }
+.step-content b { color: #0369a1; }
+
+.note {
+  margin-top: 5px;
+  background: #f0f9ff; border-left: 3px solid #7dd3fc;
+  padding: 5px 10px; font-size: 12px; color: #0369a1;
+  border-radius: 0 6px 6px 0; line-height: 1.7;
+}
+.warn {
+  margin-top: 5px;
+  background: #fef2f2; border-left: 3px solid #f87171;
+  padding: 5px 10px; font-size: 12px; color: #b91c1c;
+  border-radius: 0 6px 6px 0; line-height: 1.7; font-weight: 600;
+}
+.ok {
+  margin-top: 5px;
+  background: #f0fdf4; border-left: 3px solid #4ade80;
+  padding: 5px 10px; font-size: 12px; color: #15803d;
+  border-radius: 0 6px 6px 0; line-height: 1.7;
+}
+
+.summary {
+  background: linear-gradient(135deg, #0284c7, #0369a1);
+  border-radius: 14px; margin: 0 16px 12px;
+  padding: 18px; color: #fff;
+}
+.summary h3 { font-size: 13px; font-weight: 700; opacity: 0.8; margin-bottom: 12px; }
+.summary-row {
+  display: flex; align-items: flex-start; gap: 8px;
+  font-size: 13px; padding: 7px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  line-height: 1.6;
+}
+.summary-row:last-child { border-bottom: none; }
+.summary-num {
+  background: rgba(255,255,255,0.2); color: #fff;
+  font-size: 11px; font-weight: 900;
+  min-width: 20px; height: 20px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; margin-top: 2px;
+}
+
+.line-btn {
+  display: block; text-align: center;
+  background: #06c755; color: #fff;
+  font-size: 15px; font-weight: 900;
+  padding: 16px; border-radius: 12px;
+  text-decoration: none; margin: 0 16px 12px;
+}
+.line-btn2 {
+  display: block; text-align: center;
+  background: #06c755; color: #fff;
+  font-size: 15px; font-weight: 900;
+  padding: 16px; border-radius: 12px;
+  text-decoration: none; margin: 0 16px 0;
+}
+
+.footer-note {
+  text-align: center; font-size: 10px; color: #94a3b8;
+  padding: 16px 16px 0; line-height: 1.9;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="hero">
+  <p class="hero-eyebrow">📋 無料プレゼント｜2026年8月現在</p>
+  <h1>楽天証券を開設したら<br>絶対やるべき神設定5選</h1>
+  <p class="hero-sub">5分でできる！設定するだけでお金が増える速度が変わる</p>
+</div>
+
+<div class="intro">
+  楽天証券でNISAを始めたのに、設定をサボってる人が多すぎます。<br>
+  この5つをやるだけで、<strong>ポイントが貯まる・金利が上がる・手数料ゼロになる</strong>。全部タダでできるのにやらないのは損！<br>
+  順番に進めれば5分で終わります。
+</div>
+
+<!-- ① マネーブリッジ -->
+<div class="section-title">SETTING 1 ｜ 最重要</div>
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">1</div>
+    <div class="card-header-text">
+      <div class="card-header-title">銀行の金利が上がる設定</div>
+      <div class="card-header-sub">マネーブリッジ（楽天銀行との連携）</div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="why-box">💡 なぜやるの？ → 楽天銀行の普通預金金利が年0.02%→年0.38%に！メガバンクの約19倍。生活防衛費を置いておくだけでお金が増える</div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">楽天証券にログイン→上部メニュー「口座管理」をタップ</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">「銀行・カード・ポイント」→「<b>マネーブリッジ</b>」を選ぶ</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">「連携する」をタップ→楽天銀行のIDでログイン</div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content">連携完了！自動で金利がアップする
+          <div class="ok">✅ これだけで楽天銀行に100万円あれば年3,800円の利息（税引き前）</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ② 楽天ポイントコース -->
+<div class="section-title">SETTING 2</div>
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">2</div>
+    <div class="card-header-text">
+      <div class="card-header-title">楽天ポイントが貯まる設定</div>
+      <div class="card-header-sub">楽天ポイントコース</div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="why-box">💡 なぜやるの？ → SPU（スーパーポイントアッププログラム）の対象になる。楽天市場でのポイント倍率がUPして日常の買い物でもお得になる</div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">楽天証券にログイン→「口座管理」→「<b>楽天ポイント</b>」をタップ</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">ポイントコースの選択画面で「<b>楽天ポイントコース</b>」を選ぶ
+          <div class="warn">⚠️ 「楽天証券ポイントコース」ではなく「楽天ポイントコース」を選ぶこと</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">設定完了！翌月から楽天市場のSPUが+1倍になる</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ③ 株式数比例配分方式 -->
+<div class="section-title">SETTING 3</div>
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">3</div>
+    <div class="card-header-text">
+      <div class="card-header-title">配当金を非課税にする設定</div>
+      <div class="card-header-sub">株式数比例配分方式</div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="why-box">💡 なぜやるの？ → この設定をしないと、NISA口座でもらう配当金に20%の税金がかかる！設定するだけで非課税になる</div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">楽天証券にログイン→「口座管理」→「<b>配当金受取方法の変更</b>」をタップ</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">「<b>株式数比例配分方式</b>」を選ぶ
+          <div class="note">証券口座で受け取る＝非課税。銀行・郵便局受け取りを選ぶと課税される</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">設定完了！次回から配当金が非課税で受け取れる
+          <div class="ok">✅ 高配当株・ETFをやる人は特に必須</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ④ ゼロコース -->
+<div class="section-title">SETTING 4</div>
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">4</div>
+    <div class="card-header-text">
+      <div class="card-header-title">株の売買手数料を完全無料にする設定</div>
+      <div class="card-header-sub">ゼロコース</div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="why-box">💡 なぜやるの？ → 国内株式の売買手数料がゼロになる。今は投資信託だけでもOK。将来高配当株や優待株に興味が出たときにも対応できる</div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">楽天証券にログイン→「口座管理」→「<b>取引コースの変更</b>」をタップ</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">「<b>ゼロコース</b>」を選んで設定完了
+          <div class="note">設定後、国内株式の現物・信用取引の手数料が0円になる</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ⑤ パスキー -->
+<div class="section-title">SETTING 5</div>
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">5</div>
+    <div class="card-header-text">
+      <div class="card-header-title">口座のお金を守る設定</div>
+      <div class="card-header-sub">パスキー設定</div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="why-box">💡 なぜやるの？ → スマホの生体認証（Face ID・指紋）でログインできるようになる。パスワード入力不要でセキュリティも高い</div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">楽天証券アプリを開く→「設定」→「<b>パスキー設定</b>」をタップ</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">「パスキーを登録する」→スマホの生体認証で確認</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">登録完了！次回からFace IDや指紋でログインできる
+          <div class="ok">✅ 増やした資産を守るために必ず設定しよう</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- まとめ -->
+<div class="summary">
+  <h3>✅ 神設定5選まとめ</h3>
+  <div class="summary-row"><div class="summary-num">1</div><span>マネーブリッジ → 銀行金利が約19倍にアップ</span></div>
+  <div class="summary-row"><div class="summary-num">2</div><span>楽天ポイントコース → SPU対象でポイント倍率UP</span></div>
+  <div class="summary-row"><div class="summary-num">3</div><span>株式数比例配分方式 → 配当金を非課税で受け取る</span></div>
+  <div class="summary-row"><div class="summary-num">4</div><span>ゼロコース → 国内株の売買手数料が完全無料</span></div>
+  <div class="summary-row"><div class="summary-num">5</div><span>パスキー設定 → 生体認証で安全・簡単ログイン</span></div>
+</div>
+
+<a href="https://lin.ee/tXRnQHW" class="line-btn" target="_blank">📩 公式LINEで全プレゼントを受け取る</a>
+<a href="https://lin.ee/tXRnQHW" class="line-btn2" target="_blank">👆 ここをタップでそうたに聞いてみる！</a>
+
+<div class="footer-note">
+  ※本ページの情報は2026年8月現在のものです。楽天証券の仕様変更により内容が変わる場合があります。<br>
+  ※投資判断はご自身の責任で行ってください。
+</div>
+
+</div>
+</body>
+</html>
